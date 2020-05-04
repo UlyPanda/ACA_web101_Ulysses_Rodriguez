@@ -41,7 +41,7 @@ header {
     flex-wrap: wrap;
     font-size: 15px;
   }
-  .container {
+  @media (min-width: 992px) {.container {
       display:grid;
       grid-template-columns: .5fr 1.5fr 1fr;
       grid-template-rows: 10em 40em 20em 6em;
@@ -51,4 +51,5 @@ header {
       "aside main main"
       "aside main main"
       "aside footer footer"
+  }
   }
