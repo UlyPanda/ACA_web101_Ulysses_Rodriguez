@@ -3,40 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="contact-style.css">
+  <link rel="stylesheet" href="contact-style.css"/>
   <title>Contact Page</title>
 </head>
-<body>
+<body class="container">
     <form action="results.html" method="GET" enctype="multipart/form-data">
       <div>
-        <label for="name">Ulysses X. Rodriguez</label>
+        <label for="name">Name:</label>
         <input type="text" name="name" id="name" >
     </div>
     <div>
-      <label for="email">ulypanda44@gmail.com</label>
+      <label for="email">Email:</label>
       <input type="email" name="email" id="email" >
     </div>
     <div>
-      <label for="age">20</label>
+      <label for="age">Age:</label>
       <input type="number" name="age" id="age" min="1" max="200" step="5">
     </div>
     <div>
-      <label for="date">August 15th, 1999</label>
+      <label for="date">Birthdate:</label>
       <input type="date" name="date" id="date" min="2019-06-10">
     </div>
     <div>
-      Favorite Food
+      Favorite Food:
       <div>
-        <label for="mexican food">Mexican food</label>
-        <input type="checkbox" name="mexicanfood" id="mexicanfood">
+        <label for="hot-cheetos" id="hotcheetos">Hot Cheetos</label>
+        <input type="checkbox" name="hot-cheetos" id="hot-cheetos">
       </div>
       <div>
-        <label for="apple">Pies</label>
-        <input type="checkbox" name="pies" id="pies">
+        <label for="other">Other</label>
+        <input type="checkbox" name="other" id="other">
       </div>
+      <textarea id="other-food" name="other-food"></textarea>
     </div>
     <div>
-      Gender
+      Gender:
       <div>
         <label for="male">Male</label>
         <input type="radio" name="gender" id="male" value="male">
@@ -47,33 +48,63 @@
       </div>
     </div>
     <div>
-      <label for="eyeColor">eye color</label>
+      <label for="eyeColor">Eye Color:</label>
       <select name="eyeColor" id="eyeColor" multiple>
-        <option value="Brown">Brown</option>
-        <option label="Red" value="Red"></option>
+        <option label="Green" value="Green">Green</option>
+        <option label="Brown" value="Brown">Brown</option>
+        <option label="Blue" value="Blue">Blue</option>
       </select>
     </div>
     <div>
-      <label for="bio">Bio</label>
+      <label for="bio">Bio:</label>
       <textarea id="bio" name="bio"></textarea>
     </div>
     <input type="hidden" name="hidden" value="hi">
     <div>
-      <label for="file">File</label>
+      <label for="file">File:</label>
       <input id="file" type="file" name="file">
     </div>
     <div>
-      <label for="phone">806-215-5263</label>
+      <label for="phone">Phone:</label>
       <input type="tel" name="phone" id="phone">
     </div>
     <div>
-      <label for="url">URL</label>
+      <label for="url">URL:</label>
       <input type="url" name="url" id="url">
     </div>
     <div>
-      <label for="color">aquamarine</label>
+      <label for="color">Color:</label>
       <input type="color" name="color" id="color">
     </div>
+      How did you hear about me?
+      <div>
+        <label for="Classmate">Classmate</label>
+        <input type="checkbox" name="Classmate" id="Classmate">
+      </div>
+      <div>
+        <label for="Resume Submission">Resume Submission</label>
+        <input type="checkbox" name="Resume-Submission" id="Resume-Submission">
+      </div>
+      <div>
+        <label for="LinkedIn">LinkedIn</label>
+        <input type="checkbox" name="LinkedIn" id="LinkedIn">
+      </div>
+      <div>
+        <label for="Coding Academy Rec">Coding Academy Rec</label>
+        <input type="checkbox" name="Coding-Academy-Rec" id="Coding-Academy-Rec">
+      </div>
+        <div>
+          <div>
+            How did you hear about me?
+            <div>
+              <label for="Yes">Yes</label>
+              <input type="radio" name="Yes" id="Yes" value="Yes">
+            </div>
+            <div>
+              <label for="No">No</label>
+              <input type="radio" name="No" id="No" value="No">
+            </div>
+          </div> <br>
     <div>
       <label>
         Password
