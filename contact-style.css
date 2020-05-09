@@ -1,36 +1,76 @@
 
 form {
     color: rgb(55, 15, 94);
-    font-size: 1.4em;
+    font-size: 3em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: whitesmoke;
-    background-image: url(https://images.unsplash.com/photo-1563225409-127c18758bd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
-    background-repeat: no-repeat;
 }
 #hotcheetos {
-    color: crimson;
+    color: red;
 }
+h2 {
+    font-size: 1em;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url(https://images.unsplash.com/photo-1563225409-127c18758bd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
+  
+    /* Control the height of the image */
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
 input {
 
-    width: 15%;
-    padding: 5px;
-    margin: 10px 1px;
+    width: 25%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    color: black;
 }
 body {
     box-sizing: border-box;
     width: 100%;
     height:100%;
 }
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .btn {
+    background-color: purple;
+    font-size: large;
+    color: white;
+    padding: 16px 20px;
+    max-width: 50%;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }  
+
 @media screen and (max-width: 800px) {
-    .container {
+    .bg-img {
       -ms-flex: 50%;
       flex: 50%;
       max-width: 50%;
  } }
 @media screen and (max-width: 600px) {
-        .container {
+        .bg-img {
           -ms-flex: 100%;
           flex: 100%;
           max-width: 100%;
