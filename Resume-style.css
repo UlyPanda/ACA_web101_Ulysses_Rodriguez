@@ -11,7 +11,7 @@ header {
       width: 100%;
   }
   * {
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
   }
 
   main {
@@ -53,3 +53,10 @@ header {
       "aside footer footer"
   }
   }
+
+  @media (min-width: 290px) {#ProfilePic {
+  height: 100%;
+  border: 2px groove fuchsia;
+  box-sizing: border-box;
+}
+}

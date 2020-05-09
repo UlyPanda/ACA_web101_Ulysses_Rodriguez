@@ -17,7 +17,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 10px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -25,7 +25,7 @@ body {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
   max-width: 25%;
-  padding: 0 4px;
+  padding: 0 10px;
 }
 
 .column img {
@@ -35,7 +35,7 @@ body {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 768px) {
   .column {
     -ms-flex: 50%;
     flex: 50%;
@@ -49,5 +49,20 @@ body {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+
   }
 }
